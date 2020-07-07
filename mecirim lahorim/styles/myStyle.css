@@ -1,0 +1,404 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /*הגדרת פונט*/
+
+body {
+    width: 1280px;
+    direction: rtl;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+/*הגדרת גודל עמוד, פונט, גודל פונט, מרגין*/
+
+#back {
+    background-image: url('../imeg/BACKNEW.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*הגדרת תמונת רקע*/
+
+
+.navigation {
+    height: 100px;
+    background: #FFDE55;
+}
+/*רקע צהוב לתפריט*/
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand {
+    position: relative;
+    left: 900px;
+}
+    /* מיקום לוגו*/
+
+    .brand a img {
+        height: 96px;
+        width: 96px;
+    }
+/*גודל לוגו*/
+
+nav ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+    /*הגדרה לתפריט הראשי*/
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #000000;
+        text-decoration: none;
+    }
+        /*הגדרה לתפריט משני*/
+
+        nav ul li a:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+            /*הגדרת צבע למעבר עכבר*/
+
+            nav ul li a:hover + .nav-dropdown {
+                display: flex;
+            }
+
+.nav-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+    background: #FFDE55;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+    /*לבדוק עם רן מכאן והלאה*/
+
+    .nav-dropdown:hover {
+        display: flex;
+    }
+
+    .nav-dropdown li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+
+    .nav-dropdown .nav-dropdown-row {
+        flex-direction: row;
+    }
+
+        .nav-dropdown .nav-dropdown-row li {
+            height: 100%;
+        }
+
+    .nav-dropdown .nav-dropdown-col {
+        flex-direction: column;
+    }
+
+        .nav-dropdown .nav-dropdown-col li {
+            width: 100%;
+        }
+
+#ngishot {
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    position: relative;
+    right: 1210px;
+}
+
+    #ngishot:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+article {
+    position: relative;
+    right: 50px;
+}
+/*הגדרה למיקום תוכן הדף כולל כותרת*/
+
+#pirori {
+    position: absolute;
+    top: -50px;
+}
+    /*תפריט פירורי לחם*/
+
+    #pirori > a {
+        text-decoration: none;
+    }
+        /*ביטול קו תחתון לקישור*/
+
+
+h1 {
+    font-size: 30px;
+}
+/*הגדרת גודל כותרת*/
+
+#tochan {
+    position: relative;
+    top: 190px;
+    width: 800px;
+}
+/*הגדרה לפסקת תוכן*/
+
+.goodtoknow {
+    position: relative;
+    right: 940px;
+    width: 140px;
+    bottom: 250px;
+    font-size: 14px;
+}
+/*הגדרה לטקסט הידעת*/
+
+#img {
+    position: relative;
+    right: 770px;
+    bottom: 160px;
+}
+/*הגדרה לתמונת אווירה של הזוג*/
+
+#img2 {
+    position: relative;
+    bottom: 140px;
+    right: 200px;
+    width: 620px;
+    height: 120px;
+}
+/*הגדרה למברשת מאחורי הידעת*/
+
+#icon1 {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    text-decoration:none;
+    color:black;
+}
+/*מיקום האייקון*/
+
+
+#icon2 {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 170px;
+    cursor: not-allowed;
+}
+/*מיקום האייקון*/
+
+#icon3 {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 330px;
+    cursor: not-allowed;
+}
+/*מיקום האייקון*/
+
+#icon4 {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 500px;
+    cursor: not-allowed;
+}
+/*מיקום האייקון*/
+
+a > span {
+    display: block;
+    position: relative;
+    right: 15px;
+    bottom: 53px;
+}
+/*הגדרה לשם של האייקון*/
+
+a > b {
+    position: relative;
+    bottom: 70px;
+    right: 45px;
+}
+/*הגדרה ללחץ כאן*/
+
+#press {
+    position: relative;
+    bottom: 73px;
+    right: 45px;
+}
+/*חידוד המיקום של לחץ כאן לעושים את זה נכון*/
+
+aside > .koteret {
+    font-size: 24px;
+}
+/*עיצוב טקסט לכותרת הסבר על האייקונים*/
+
+#icontxt1 {
+    position: relative;
+    bottom: 52px;
+    right: 22px
+}
+/*יישור לשם של האייקון רוצה מול צריך*/
+
+#icontxt2 {
+    position: relative;
+    bottom: 53px;
+    right: 10px;
+}
+/*יישור לשם של האייקון עושים את זה נכון*/
+
+#icon_brush {
+    position: relative;
+    bottom: 180px;
+    left: 50px;
+    width: 420px;
+    height: 280px;
+    float: left;
+}
+/*רקע למידע של האייקונים*/
+
+#moveOn {
+    font-size: 24px;
+    position: relative;
+    right: 895px;
+    bottom: 170px;
+}
+/*הגדרה לטקסט עברו על האייקון*/
+
+a > aside {
+    position: absolute;
+    top: 115px;
+    right: 900px;
+    width: 220px;
+    display: none;
+}
+/*הגדרה לטקסט הסבר על האייקון*/
+
+#icon1:hover #loKamzan {
+    display: block;
+    top: 73px;
+}
+/*מעבר עכבר על אייקון 1-חשיפת התוכן*/
+
+#icon2:hover #roze {
+    display: block;
+    right: 730px;
+    top: 73px;
+}
+/*מעבר עכבר על אייקון 2-חשיפת התוכן*/
+
+#icon3:hover #bizbozim {
+    display: block;
+    right: 570px;
+    top: 73px
+}
+/*מעבר עכבר על אייקון 3-חשיפת התוכן*/
+
+#icon4:hover #oshim {
+    display: block;
+    right: 400px;
+    top: 73px;
+}
+/*מעבר עכבר על אייקון 4-חשיפת התוכן*/
+
+footer {
+    position: relative;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../imeg/newfooter@2x-8.png');
+    position: absolute;
+    width: 1280px;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.not-allowed:hover {
+    cursor: not-allowed
+}
+
+.firstrow {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#mcirim {
+    position: absolute;
+}
+
+    #mcirim > li {
+        position: relative;
+        bottom: -130px;
+        right: 230px;
+        list-style: none;
+        line-height: 25px;
+    }
+
+        #mcirim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+#holkim {
+    position: absolute;
+}
+
+    #holkim > li {
+        position: relative;
+        bottom: -130px;
+        right: 450px;
+        list-style: none;
+        line-height: 25px
+    }
+
+        #holkim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+#tkoim > li {
+    position: relative;
+    bottom: -145px;
+    right: 690px;
+    list-style: none;
+    line-height: 25px
+}
+
+    #tkoim > li > a {
+        text-decoration: none;
+        color: black;
+    }
+
+#aboutus > li {
+    position: relative;
+    right: 920px;
+    bottom: 50px;
+    list-style: none;
+    line-height: 25px
+}
+
+    #aboutus > li > a {
+        text-decoration: none;
+        color: black;
+    }
